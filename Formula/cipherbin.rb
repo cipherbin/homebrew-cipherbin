@@ -7,11 +7,11 @@ class Cipherbin < Formula
 
   if OS.mac?
     url "https://github.com/bradford-hamilton/cipher-bin-cli/releases/download/v0.2.0/cipher-bin-cli_0.2.0_Darwin_x86_64.tar.gz"
-    sha256 "77d7c39397cd11bfd5edceeb8199b8cf6774db5d8ab2853ed4526acbdae6bd2b"
+    sha256 "63b4a2016e2e086cc15adcaad01ca0ea7137c8aa13e456f461d8689e792e76f0"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/bradford-hamilton/cipher-bin-cli/releases/download/v0.2.0/cipher-bin-cli_0.2.0_Linux_x86_64.tar.gz"
-      sha256 "7e5fa1d2940eda72e0aba35762c7302288a12c6e78b546f5a92a427a8c9bf94b"
+      sha256 "cb59f7fca5d06c4a73732126fdd7459276cf5046e3e7edd449720fc9032df263"
     end
   end
   

@@ -2,16 +2,16 @@
 class Cipherbin < Formula
   desc "CLI tool for communicating with cipherbin to interact with messages"
   homepage ""
-  version "0.4.2"
+  version "0.5.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/bradford-hamilton/cipher-bin-cli/releases/download/v0.4.2/cipher-bin-cli_0.4.2_Darwin_x86_64.tar.gz"
-    sha256 "eb1d482352f90992b8258cf200c1040dcf40a88fb5b80b5c31a8a4107d8b487f"
+    url "https://github.com/cipherbin/cipher-bin-cli/releases/download/v0.5.0/cipher-bin-cli_0.5.0_Darwin_x86_64.tar.gz"
+    sha256 "ecf20a3aa8398a735f1452df7d0c45b38197cb15fc8668ec541f1d01475d6460"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/bradford-hamilton/cipher-bin-cli/releases/download/v0.4.2/cipher-bin-cli_0.4.2_Linux_x86_64.tar.gz"
-      sha256 "0d8d653d78d2c0be6367e2cf9fd1a9ff92432a27c3661794faf491bcb3f30c10"
+      url "https://github.com/cipherbin/cipher-bin-cli/releases/download/v0.5.0/cipher-bin-cli_0.5.0_Linux_x86_64.tar.gz"
+      sha256 "1b398973c56c5807487df8c7e29b138ba2152a204c24fce421e3135b4ce58c15"
     end
   end
   

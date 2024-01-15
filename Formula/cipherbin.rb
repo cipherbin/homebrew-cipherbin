@@ -5,23 +5,23 @@
 class Cipherbin < Formula
   desc "CLI tool for communicating with cipherbin to interact with messages"
   homepage ""
-  version "0.6.0"
+  version "0.6.1"
 
   depends_on "git"
   depends_on "zsh"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/cipherbin/cipher-bin-cli/releases/download/v0.6.0/cipher-bin-cli_0.6.0_darwin_arm64.tar.gz"
-      sha256 "8008157373b85efabe08f560810ba9b36fa79c6dc8ee0a79963994bacb7bdfad"
+      url "https://github.com/cipherbin/cipher-bin-cli/releases/download/v0.6.1/cipher-bin-cli_0.6.1_darwin_arm64.tar.gz"
+      sha256 "19907845028b60fd35fe0a790b0b547e5e8f936378ffd958fe4c65fe41ecd8b4"
 
       def install
         bin.install "cipherbin"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cipherbin/cipher-bin-cli/releases/download/v0.6.0/cipher-bin-cli_0.6.0_darwin_amd64.tar.gz"
-      sha256 "b74984ce8c7f55f5e62bd5d661c22fffb8d381a968b5b4571d53b8511e65421a"
+      url "https://github.com/cipherbin/cipher-bin-cli/releases/download/v0.6.1/cipher-bin-cli_0.6.1_darwin_amd64.tar.gz"
+      sha256 "d6cd1aabe756d7e81a4373c07697f8d4e533120fa694f0c58d757973ad27e383"
 
       def install
         bin.install "cipherbin"
@@ -31,24 +31,24 @@ class Cipherbin < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/cipherbin/cipher-bin-cli/releases/download/v0.6.0/cipher-bin-cli_0.6.0_linux_armv6.tar.gz"
-      sha256 "5d57c5438031057e654a53a62386c925e27eb325d220738272746388242f953c"
+      url "https://github.com/cipherbin/cipher-bin-cli/releases/download/v0.6.1/cipher-bin-cli_0.6.1_linux_armv6.tar.gz"
+      sha256 "8405ec74b3fe03a4d54825c8c47df9f02a287f25d8e8be1426cf3f5e2e0a29db"
 
       def install
         bin.install "cipherbin"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cipherbin/cipher-bin-cli/releases/download/v0.6.0/cipher-bin-cli_0.6.0_linux_arm64.tar.gz"
-      sha256 "937a68be7beb1c6735dfc0dbec3384f5f32e9d237056974a33c9a756c644d127"
+      url "https://github.com/cipherbin/cipher-bin-cli/releases/download/v0.6.1/cipher-bin-cli_0.6.1_linux_arm64.tar.gz"
+      sha256 "0884b450f297a5652a11c6342b2b17480d36492f1624adc20944ec32a6d7374d"
 
       def install
         bin.install "cipherbin"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cipherbin/cipher-bin-cli/releases/download/v0.6.0/cipher-bin-cli_0.6.0_linux_amd64.tar.gz"
-      sha256 "97b0ba4d0b1fbff6580f9978a40f257ff7eda5e38623e2081af53b0e5ee080c8"
+      url "https://github.com/cipherbin/cipher-bin-cli/releases/download/v0.6.1/cipher-bin-cli_0.6.1_linux_amd64.tar.gz"
+      sha256 "d1b585bd0968bd8dc2d086076998ea75c5304f11eac06f1b79fd96dccdf8da7c"
 
       def install
         bin.install "cipherbin"
